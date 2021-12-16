@@ -16,6 +16,11 @@
     --fonte3: 'Sriracha', cursive;
 }
 
+html,body{
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
 header{
     background-color: black;
     margin: auto;
@@ -23,6 +28,7 @@ header{
 }
 
 header h1 {
+    font-variant: small-caps;
     font-family: "passion one";
     font-size: 10vw;
     color: white;
@@ -32,4 +38,66 @@ header h1 {
 header p{
     color: white;
     padding-bottom: 50px;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+    line-height: 1em;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    padding-left: 30px;
+    display: block;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem>p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);   
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
